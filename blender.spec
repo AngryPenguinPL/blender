@@ -30,7 +30,7 @@ BuildRequires:	ffmpeg-devel >= 0.7
 BuildRequires:	gomp-devel
 BuildRequires:	jpeg-devel
 BuildRequires:	jemalloc-devel
-BuildRequires:	pkgconfig(libopenjpeg) = 1.5.2
+BuildRequires:	pkgconfig(openjpeg) = 1.5.2
 BuildRequires:	pkgconfig(libtiff-4)
 BuildRequires:	pkgconfig(glew)
 BuildRequires:	pkgconfig(glu)
