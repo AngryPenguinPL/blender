@@ -1,0 +1,26 @@
+Index: source/blender/imbuf/intern/dds/Common.h
+===================================================================
+--- source/blender/imbuf/intern/dds/Common.h
++++ source/blender/imbuf/intern/dds/Common.h	2018-04-23 18:53:30.402547834 +0200
+@@ -35,7 +35,7 @@
+ #define max(a,b) ((a) >= (b) ? (a) : (b))
+ #endif
+ #ifndef clamp
+-#define clamp(x,a,b) min(max((x), (a)), (b))
++#define clamp(x,a,b) min(fmax((x), (a)), (b))
+ #endif
+ 
+ template<typename T>
+Index: source/blender/imbuf/intern/dds/DirectDrawSurface.cpp
+===================================================================
+--- source/blender/imbuf/intern/dds/DirectDrawSurface.cpp
++++ source/blender/imbuf/intern/dds/DirectDrawSurface.cpp	2018-04-23 18:55:39.574439368 +0200
+@@ -1379,7 +1379,7 @@
+ 	
+ 	for (uint m = 0; m < mipmap; m++)
+ 	{
+-		w = max(1U, w / 2);
++		w = fmax(1U, w / 2);
+ 		h = max(1U, h / 2);
+ 		d = max(1U, d / 2);
+ 	}
