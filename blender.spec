@@ -33,6 +33,7 @@ BuildRequires:	gomp-devel
 BuildRequires:	jpeg-devel
 BuildRequires:	jemalloc-devel
 #BuildRequires:	pkgconfig(openjpeg) = 1.5.2
+BuildRequires:	pkgconfig(libopenjp2)
 BuildRequires:	pkgconfig(libtiff-4)
 BuildRequires:	pkgconfig(glew)
 BuildRequires:	pkgconfig(glu)
