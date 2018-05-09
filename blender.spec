@@ -25,6 +25,7 @@ Patch6:		blender-2.67-uninit-var.patch
 Patch7:		blender-2.71-sse2.patch
 Patch8:		blender-ffmpeg3.patch
 Patch9:		blender-2.76b-fix-compil-dds.patch
+Patch10:	blender-gcc6.patch
 BuildRequires:	cmake >= 2.8
 BuildRequires:	boost-devel
 BuildRequires:	ffmpeg-devel >= 0.7
@@ -76,6 +77,7 @@ implemented.
 %patch7 -p1
 %patch8 -p1
 %patch9 -p0
+%patch10 -p1
 
 %build
 #build with gcc for sse and openmp support
