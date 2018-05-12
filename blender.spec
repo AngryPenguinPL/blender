@@ -111,7 +111,7 @@ export CXX=g++
 	-DWITH_OPENCOLORIO:BOOL=ON \
 	-DWITH_DOC_MANPAGE:BOOL=ON \
 	-DOPENJPEG_ROOT_DIR=/usr/include/openjpeg-2.2 \ 
-	-lopenjp2
+
 %if %with cycles
 	-DWITH_CYCLES:BOOL=ON \
 %else
@@ -148,7 +148,7 @@ mv build non-sse
         -DWITH_OPENCOLORIO:BOOL=ON \
         -DWITH_DOC_MANPAGE:BOOL=ON \
 	-DOPENJPEG_ROOT_DIR=/usr/include/openjpeg-2.2 \ 
-	-lopenjp2
+	
 %if %with cycles
 	-DWITH_CYCLES:BOOL=ON \
 %else
